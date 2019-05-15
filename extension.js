@@ -16,7 +16,7 @@ function activate(context) {
 			case 'ytyp':
 			case 'ymt': {
 
-				openedFileNames.push(e.fileName);
+				openedFileNames.push(e.fileName + '.xml');
 
 				const gtautil = spawn('GTAUtil', ['exportmeta', '-i', e.fileName]);
 

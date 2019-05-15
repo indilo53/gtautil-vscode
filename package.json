@@ -3,7 +3,8 @@
 	"displayName": "gtautil-vscode",
 	"description": "GTAUtil for Visual Studio Code",
 	"publisher" : "gizz",
-	"version": "0.0.1",
+	"repository" : "https://github.com/indilo53/gtautil-vscode",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.33.0"
 	},

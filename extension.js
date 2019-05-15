@@ -9,14 +9,14 @@ function activate(context) {
 
 	vscode.workspace.onDidOpenTextDocument(e => {
 
-		openedFileNames.push(e.fileName);
-
 		const ext = e.fileName.split('.').reverse()[0];
 		switch(ext) {
 
 			case 'ymap':
 			case 'ytyp':
 			case 'ymt': {
+
+				openedFileNames.push(e.fileName);
 
 				const gtautil = spawn('GTAUtil', ['exportmeta', '-i', e.fileName]);
 
